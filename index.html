@@ -1,67 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Inicio</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <link rel="icon" href="img/user-cheems.png" type="image/x-icon" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+
+<head>
+  <title>Inicio</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="icon" href="img/user-cheems.png" type="image/x-icon" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style2.css" />
+  <link rel="stylesheet" href="css/typos.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+
 </head>
+
 <body>
-    <header class="bg-naranjo-op z-index-d">
-      <nav class="navbar navbar-expand-lg navbar-light bg-naranjo-op ">
-        <div class="container text-light pt-2">
-          <a class="navbar-brand tx-azul" href="index.html">
-            <div class="titulorecetas">
-              <p class="titulo-receta display-6">Recetas</p>
-              <p class="titulo-mundo">Del mundo</p>
+  <header class="fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background: rgba(247, 84, 66, 0.95);">
+      <div class="container py-2">
+        <!-- Logo Section -->
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+          <img src="img/user-cheems.png" alt="Logo" height="40" class="me-2">
+          <div class="brand-text">
+            <h1 class="h4 mb-0 text-white">Recetas</h1>
+            <p class="small mb-0 text-white-50">Del Mundo</p>
           </div>
         </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+
+        <!-- Navbar Toggler -->
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown">
+          <span class="navbar-toggler-icon"></span>
         </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a href="index.html" class="nav-link links text-decoration-none text-light">Inicio</a>
+
+        <!-- Navigation Items -->
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto align-items-center">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link px-3">Inicio</a>
             </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle links text-decoration-none text-light" href="#"
-                  id="navbarDropdownPaises" role="button" data-bs-toggle="dropdown" aria-expanded="false">Países</a>
-                <ul class="dropdown-menu" id="navbarDropdownPaisesMenu" aria-labelledby="navbarDropdownPaises">
-                  <!-- Los países se cargarán aquí dinámicamente -->
-                </ul>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle px-3" href="#" id="navbarDropdownPaises" data-bs-toggle="dropdown">
+                Países
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end animate slideIn" id="navbarDropdownPaisesMenu">
+                <!-- Dynamic content -->
+              </ul>
             </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle links text-decoration-none text-light" href="#"
-                  id="navbarDropdownCategorias" role="button" data-bs-toggle="dropdown"
-                  aria-expanded="false">Categorías</a>
-                <ul class="dropdown-menu" id="navbarDropdownCategoriasMenu" aria-labelledby="navbarDropdownCategorias">
-                  <!-- Las categorías se cargarán aquí dinámicamente -->
-                </ul>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle px-3" href="#" id="navbarDropdownCategorias" data-bs-toggle="dropdown">
+                Categorías
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end animate slideIn" id="navbarDropdownCategoriasMenu">
+                <!-- Dynamic content -->
+              </ul>
             </li>
-              <li class="nav-item">
-                <a class="nav-link links text-decoration-none text-light" href="#" id="recetaRandomLink">Receta
-                  aleatoria</a>
+            <li class="nav-item">
+              <a class="nav-link px-3" href="#" id="recetaRandomLink">Receta aleatoria</a>
             </li>
-              <li class="nav-item">
-                <a class="nav-link links text-decoration-none text-light" href="login.html" id="loginLink">
-                  <i class="fas fa-sign-in-alt"></i>
-                  Acceder
+            <li class="nav-item">
+              <a class="nav-link px-3" href="login.html" id="loginLink">
+                <i class="fas fa-sign-in-alt me-1"></i>Acceder
               </a>
             </li>
-              <li class="nav-item btn btn-danger ms-2" id="registerLink">
-                <a class="nav-link text-light text-decoration-none" href="register.html">
-                  <i class="fas fa-user-plus"></i>
-                  Registrarse</a>
+            <li class="nav-item ms-2">
+              <a class="btn btn-outline-light rounded-pill px-4" href="register.html" id="registerLink">
+                <i class="fas fa-user-plus me-1"></i>Registrarse
+              </a>
             </li>
-              <li class="nav-item d-flex justify-content-center" id="userAvatar">
-                <a class="nav-link p-0 " href="#" id="sidebarToggle">
-                  <img class="rounded-circle ms-2 " src="img/user-cheems.png" alt=""
-                    style="height: 50px; width: 50px; object-fit: cover;">
+            <li class="nav-item ms-3" id="userAvatar">
+              <a class="nav-link p-0" href="#" id="sidebarToggle">
+                <img class="rounded-circle border border-2 border-white" src="img/user-cheems.png" alt="Usuario"
+                  style="height: 40px; width: 40px; object-fit: cover;">
               </a>
             </li>
           </ul>
@@ -69,267 +79,490 @@
       </div>
     </nav>
   </header>
-    <div id="sidebar" class="sidebar">
-      <div class="sidebar-header">
-        <h3>Mi Perfil Culinario</h3>
-        <a href="#" class="closebtn" id="closeSidebar">&times;</a>
+
+  <!-- Improved Sidebar -->
+  <div id="sidebar" class="sidebar shadow-lg">
+    <div class="sidebar-header bg-gradient" style="background: linear-gradient(45deg, #F75442, #FF8C42);">
+      <h3 class="mb-0"><i class="fas fa-user-circle me-2"></i>Mi Perfil</h3>
+      <button class="btn-close btn-close-white" id="closeSidebar"></button>
     </div>
-      <div class="sidebar-content">
-        <div class="container text-center">
-          <div class="row">
-            <div class="">
-              <img class="rounded-circle" src="img/user-cheems.png" alt="">
-          </div>
-            <div class="">
-              <br>
-              <span class="text-align lato-bold" style="font-size: 25px;">Chef Explorador</span>
-          </div>
-        </div>
+
+    <div class="sidebar-content p-4">
+      <div class="text-center mb-4">
+        <img class="rounded-circle border border-3 border-white shadow" src="img/user-cheems.png" alt="Profile"
+          style="width: 120px; height: 120px; object-fit: cover;">
+        <h4 class="mt-3 mb-1">Chef Explorador</h4>
+        <span class="badge bg-success rounded-pill px-3">Activo</span>
       </div>
-        <br>
-        <br>
-        <div class="card">
-          <div class="card-header">
-            <h5 class="card-title">Información Personal</h5>
+
+      <div class="card border-0 shadow-sm">
+        <div class="card-header bg-light border-0">
+          <h5 class="card-title mb-0"><i class="fas fa-info-circle me-2"></i>Información Personal</h5>
         </div>
-          <div class="card-body">
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item d-flex justify-content-between align-items-center">
-                <div class="d-flex align-items-center">
-                  <i class="fas fa-user me-2"></i>
-                  <span class="lato-black">Nombre</span>
-              </div>
+        <div class="card-body">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item px-0">
+              <div class="d-flex justify-content-between align-items-center">
+                <div><i class="fas fa-user me-2 text-primary"></i>Nombre</div>
                 <span id="userName" class="text-muted"></span>
-            </li>
-              <li class="list-group-item d-flex justify-content-between align-items-center">
-                <div class="d-flex align-items-center">
-                  <i class="fas fa-user me-2"></i>
-                  <span class="lato-black">Apellido</span>
               </div>
+            </li>
+            <li class="list-group-item px-0">
+              <div class="d-flex justify-content-between align-items-center">
+                <div><i class="fas fa-user me-2 text-primary"></i>Apellido</div>
                 <span id="userLastName" class="text-muted"></span>
-            </li>
-              <li class="list-group-item d-flex justify-content-between align-items-center">
-                <div class="d-flex align-items-center">
-                  <i class="fas fa-envelope me-2"></i>
-                  <span class="lato-black">Correo</span>
               </div>
+            </li>
+            <li class="list-group-item px-0">
+              <div class="d-flex justify-content-between align-items-center">
+                <div><i class="fas fa-envelope me-2 text-primary"></i>Correo</div>
                 <span id="userEmail" class="text-muted"></span>
-            </li>
-              <li class="list-group-item d-flex justify-content-between align-items-center">
-                <div class="d-flex align-items-center">
-                  <i class="fas fa-check-circle me-2"></i>
-                  <span class="lato-black">Estado</span>
               </div>
-                <span id="userActive" class="badge bg-success"></span>
             </li>
           </ul>
         </div>
       </div>
-        <a href="#" id="logoutLink" class="btn btn-danger mt-3" style="color: white !important;">
-          <i class="fas fa-sign-out-alt"></i>
-          Cerrar Sesión
+
+      <a href="#" id="logoutLink" class="btn btn-danger w-100 mt-4">
+        <i class="fas fa-sign-out-alt me-2"></i>Cerrar Sesión
       </a>
     </div>
   </div>
-    <!-- Modal -->
-    <div class="modal fade modal-lg" id="recetaAleatoriaModal" tabindex="-1" aria-labelledby="recetaAleatoriaModalLabel"
-      aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="recetaAleatoriaModalLabel">
-              Receta Aleatoria
-            </h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+  <!-- Modal -->
+  <div class="modal fade" id="recetaAleatoriaModal" tabindex="-1" aria-labelledby="recetaAleatoriaModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content">
+        <!-- Header -->
+        <div class="modal-header bg-light border-0">
+          <div class="modal-title">
+            <h4 class="mb-0 fw-bold" id="recetaAleatoriaModalLabel">
+              <i class="fas fa-random me-2 text-primary"></i>Receta Aleatoria
+            </h4>
+            <p class="text-muted small mb-0">Descubre nuevas recetas cada día</p>
+          </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-          <div class="modal-body" id="recetaAleatoriaModalBody">
-            <!-- Contenido de la receta aleatoria se cargará aquí -->
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-warning" data-bs-dismiss="modal">
-              Cerrar
-            </button>
-        </div>
-      </div>
-    </div>
-  </div>
-    <div class="hero">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-md-7">
-            <!-- Masthead Heading-->
-            <br />
-            <h1 class="masthead-heading text-uppercase mb-0" style="text-align: start; color: rgb(47, 66, 149)">
-              Bienvenid@
-            </h1>
-            <!-- Icon Divider-->
-            <!-- Masthead Subheading-->
-            <p class="masthead-subheading font-weight-bold mb-0" style="color: rgb(153, 104, 46)">
-              ¡Bienvenido a nuestra pagina de comidas! Aquí podrás descubrir
-              deliciosas opciones de diferentes países para satisfacer tus
-              antojos culinarios. ¡Buen provecho!
-            </p>
-        </div>
-          <div class="col-md-5 text-center py-3">
-            <!-- Masthead Avatar Image-->
-            <img src="img\cheems-waso.png" alt="" class="w-100" />
-        </div>
-      </div>
-    </div>
-  </div>
-    <main>
-      <!-- acerca de -->
-      <div class="acerca-de bg-crema">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="titulo-recetas text-center">
-              <p class="display-6 tx-cafe fw-500 py-3 my-3">
-                <i class="fas fa-check-circle me-3"></i>
-                Como funciona
-                <i class="fas fa-check-circle me-3 ms-2"></i>
-            </p>
-          </div>
-            <div class="col-md-3 text-center align-self-center">
-              <img class="index-img" src="img\Eat and Enjoy-8.png" alt="" />
-              <div class="cono-funciona text-center">
-                <p class="tx-cafe display-7">¿De donde puedes Acceder?</p>
-                <p class="tx-gris display-8">
-                  Desde todas las partes del mundo, sin importar donde seas
-                </p>
-            </div>
-          </div>
-            <div class="col-md-1"></div>
-            <div class="col-md-3 text-center align-self-center">
-              <img class="index-img" src="img\Meal-icon-8.png" alt="" />
-              <div class="cono-funciona text-center">
-                <p class="tx-cafe display-7">¿De donde?</p>
-                <p class="tx-gris display-8">
-                  Gracias a la gran comunidad culinaria, podemos traer recetas
-                  desde cualquier parte del mundo
-                </p>
-            </div>
-          </div>
-            <div class="col-md-1"></div>
-            <div class="col-md-3 text-center align-self-center">
-              <img class="index-img" src="img\Recurso 41-8.png" alt="" />
-              <div class="cono-funciona text-center">
-                <p class="tx-cafe display-7">¿Puedo Ayudar?</p>
-                <p class="tx-gris display-8">
-                  claro, solo necesitas acceder y podras aportar a esta gran
-                  comunidad
-                </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-      <!-- recetas -->
-      <div class="recetas text-center">
-        <div class="container text-center">
-          <div class="row text-center">
-            <div class="titulo-recetas text-center">
-              <p class="display-6 tx-cafe fw-500 py-3 my-3">
-                <i class="fas fa-check-circle me-3"></i>
-                RECETAS
-                <i class="fas fa-check-circle me-3"></i>
-            </p>
-          </div>
+
+        <!-- Body -->
+        <div class="modal-body p-4" id="recetaAleatoriaModalBody">
+          <div class="row g-4">
+            <!-- Imagen y Detalles -->
             <div class="col-md-6">
-              <a href="comidas-por-pais.html">
-                <img class="w-100" src="img\por-pais.png" alt="" />
-            </a>
-          </div>
-            <hr class="display-responsive" />
-            <div class="col-md-6">
-              <a href="comidas-por-categoria.html">
-                <img class="w-100" src="img\por-tipo.png" alt="" />
-            </a>
-          </div>
-            <hr class="hr mt-4" />
-            <!-- paises -->
-            <div class="titulo-recetas text-center">
-              <p class="display-6 tx-cafe fw-500 py-3 my-3">
-                <i class="fas fa-check-circle me-3"></i>
-                PAÍSES
-                <i class="fas fa-check-circle me-3"></i>
-            </p>
-          </div>
-            <div class="row row-no-margin text-center" id="pais"></div>
-        </div>
-      </div>
-    </div>
-      <!-- RECETA DEL DÍA -->
-      <div class="receta-del-dia my-3">
-        <div class="container py-3">
-          <div class="row align-items-center py-3" id="recetaDelDia">
-            <div class="col-md-6">
-              <p class="display-7 tx-cafe">Receta del día</p>
-              <p class="receta-random tx-cafe" id="recetaDelDiaNombre">
-                Receta random
-              </p>
-              <div id="recetaDelDiaDescripcion">
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                diam nonummy nibh euismod
+              <!-- Imagen con overlay -->
+              <div class="position-relative mb-4">
+                <img src="placeholder.jpg" class="img-fluid rounded-3 shadow-sm w-100" alt="Receta" id="recetaImg"
+                  style="max-height: 350px; object-fit: cover;">
+                <div class="position-absolute bottom-0 start-0 p-3 w-100 bg-gradient-dark">
+                  <div class="d-flex gap-2">
+                    <span class="badge bg-primary">
+                      <i class="fas fa-clock me-1"></i>30 min
+                    </span>
+                    <span class="badge bg-success">
+                      <i class="fas fa-signal me-1"></i>Fácil
+                    </span>
+                    <span class="badge bg-info">
+                      <i class="fas fa-users me-1"></i>4 personas
+                    </span>
+                  </div>
+                </div>
               </div>
+
+              <!-- Información General -->
+              <div class="card bg-light border-0">
+                <div class="card-body">
+                  <h6 class="fw-bold mb-3">
+                    <i class="fas fa-info-circle me-2 text-primary"></i>Información General
+                  </h6>
+                  <div class="row g-3">
+                    <div class="col-6">
+                      <small class="text-muted d-block">Tiempo de preparación</small>
+                      <span class="fw-medium">30 minutos</span>
+                    </div>
+                    <div class="col-6">
+                      <small class="text-muted d-block">Porciones</small>
+                      <span class="fw-medium">4 personas</span>
+                    </div>
+                    <div class="col-6">
+                      <small class="text-muted d-block">Dificultad</small>
+                      <span class="fw-medium">Fácil</span>
+                    </div>
+                    <div class="col-6">
+                      <small class="text-muted d-block">Categoría</small>
+                      <span class="fw-medium" id="recetaCategoria">Principal</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Contenido -->
+            <div class="col-md-6">
+              <div class="h-100 d-flex flex-column">
+                <h5 class="fw-bold mb-4" id="recetaTitulo">Nombre de la Receta</h5>
+
+                <!-- Descripción -->
+                <div class="mb-4">
+                  <p class="text-muted" id="recetaDescripcion">
+                    Descripción de la receta...
+                  </p>
+                </div>
+
+                <!-- Ingredientes -->
+                <div class="mb-4">
+                  <h6 class="fw-bold mb-3">
+                    <i class="fas fa-list-ul me-2 text-primary"></i>Ingredientes
+                  </h6>
+                  <ul class="list-group list-group-flush border-top border-bottom" id="ingredientesList">
+                    <!-- Ingredientes dinámicos -->
+                  </ul>
+                </div>
+
+                <!-- Instrucciones -->
+                <div class="flex-grow-1">
+                  <h6 class="fw-bold mb-3">
+                    <i class="fas fa-tasks me-2 text-primary"></i>Preparación
+                  </h6>
+                  <div id="instruccionesList" class="overflow-auto" style="max-height: 250px;">
+                    <!-- Instrucciones dinámicas -->
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-            <div class="col-md-6 text-center">
-              <img src="https://placehold.co/624x352" alt="" id="recetaDelDiaImg" />
-          </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="modal-footer border-0">
+          <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">
+            <i class="fas fa-times me-2"></i>Cerrar
+          </button>
+          <button type="button" class="btn btn-primary">
+            <i class="fas fa-heart me-2"></i>Guardar Receta
+          </button>
         </div>
       </div>
     </div>
-      <!-- Descarga la app -->
-      <div class="descarga-la-app">
-        <div class="container py-3">
-          <div class="row align-items-center py-3">
-            <div class="col-md-6 text-center">
-              <img class="img-celular" height="600px" src="img\Recurso 15-8.png" alt="" />
+  </div>
+  <!-- include hero -->
+  <include src="include/carousel.html"></include>
+  <main>
+    <!-- acerca de -->
+    <section class="how-it-works bg-light py-5">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="row mb-5">
+          <div class="col-12 text-center">
+            <span class="text-primary fw-semibold text-uppercase letter-spacing-2">Guía Simple</span>
+            <h2 class="display-5 fw-bold mt-2 mb-3">¿Cómo Funciona?</h2>
+            <div class="mx-auto" style="max-width: 600px;">
+              <p class="text-muted lead">Descubre cómo nuestra plataforma te ayuda a explorar la gastronomía mundial</p>
+            </div>
           </div>
-            <div class="col-md-6 text-center">
-              <p class="display-7 tx-cafe"></p>
-              <p class="receta-random tx-cafe">Descarga nuestra App</p>
-              <p>
-                Para poder acceder de manera más fácil en cualquier momento y
-                donde desees.
-              </p>
-              <b>
-                <p>!Proximamente en iOS!</p>
-            </b>
-              <div class="text-center">
-                <a href="RDM.apk" class="btn btn-lg bg-naranjo tx-blanco btn-index">Android</a>
-                <a href="#" class="btn btn-lg btn-danger bg-naranjo tx-blanco btn-index disabled">iOS</a>
+        </div>
+
+        <!-- Features Grid -->
+        <div class="row g-4 justify-content-center">
+          <!-- Feature 1 -->
+          <div class="col-md-4">
+            <div class="card h-100 border-0 shadow-sm hover-shadow transition-300">
+              <div class="card-body text-center p-4">
+                <div class="feature-icon bg-primary bg-opacity-10 rounded-circle p-3 mb-4 mx-auto"
+                  style="width: fit-content;">
+                  <img class="index-img" src="img/Eat and Enjoy-8.png" alt="Acceso Global"
+                    style="width: 64px; height: 64px;">
+                </div>
+                <h4 class="fw-bold mb-3">Acceso Global</h4>
+                <p class="text-muted mb-0">
+                  Explora recetas desde cualquier parte del mundo, sin límites ni fronteras
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Feature 2 -->
+          <div class="col-md-4">
+            <div class="card h-100 border-0 shadow-sm hover-shadow transition-300">
+              <div class="card-body text-center p-4">
+                <div class="feature-icon bg-primary bg-opacity-10 rounded-circle p-3 mb-4 mx-auto"
+                  style="width: fit-content;">
+                  <img class="index-img" src="img/Meal-icon-8.png" alt="Comunidad Culinaria"
+                    style="width: 64px; height: 64px;">
+                </div>
+                <h4 class="fw-bold mb-3">Comunidad Culinaria</h4>
+                <p class="text-muted mb-0">
+                  Conecta con chefs y entusiastas de la cocina de todo el mundo
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Feature 3 -->
+          <div class="col-md-4">
+            <div class="card h-100 border-0 shadow-sm hover-shadow transition-300">
+              <div class="card-body text-center p-4">
+                <div class="feature-icon bg-primary bg-opacity-10 rounded-circle p-3 mb-4 mx-auto"
+                  style="width: fit-content;">
+                  <img class="index-img" src="img/Recurso 41-8.png" alt="Contribuye" style="width: 64px; height: 64px;">
+                </div>
+                <h4 class="fw-bold mb-3">Contribuye</h4>
+                <p class="text-muted mb-0">
+                  Comparte tus recetas y forma parte de nuestra creciente comunidad
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </main>
-    <footer class="bg-naranjo text-light">
-      <div class="container pt-2 text-center">
-        <div class="row">
-          <div class="col-md-2">
-            <div class="titulorecetas">
-              <p class="titulo-receta display-6">Recetas</p>
-              <p class="titulo-mundo">Del mundo</p>
+    </section>
+
+
+    <!-- Nueva Sección: Categorías Populares -->
+    <section class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-5">Categorías Populares</h2>
+        <div class="row g-4">
+          <div class="col-6 col-md-3">
+            <div class="d-flex flex-column align-items-center">
+              <div class="rounded-circle bg-primary p-4 mb-3">
+                <i class="fas fa-utensils fa-2x text-white"></i>
+              </div>
+              <h5>Platos Principales</h5>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="d-flex flex-column align-items-center">
+              <div class="rounded-circle bg-success p-4 mb-3">
+                <i class="fas fa-leaf fa-2x text-white"></i>
+              </div>
+              <h5>Vegetarianos</h5>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="d-flex flex-column align-items-center">
+              <div class="rounded-circle bg-warning p-4 mb-3">
+                <i class="fas fa-birthday-cake fa-2x text-white"></i>
+              </div>
+              <h5>Postres</h5>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="d-flex flex-column align-items-center">
+              <div class="rounded-circle bg-danger p-4 mb-3">
+                <i class="fas fa-glass-cheers fa-2x text-white"></i>
+              </div>
+              <h5>Bebidas</h5>
+            </div>
           </div>
         </div>
-          <div class="col-md-10 align-self-center">
-            <p id="anno">
-              {año}, Recetas del mundo - un sitio donde podrás encontrar la
-              receta perfecta para esa ocasión.
-            </p>
+      </div>
+    </section>
+
+    <!-- Nueva Sección: Destacados de la Semana -->
+    <section class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center mb-5">Destacados de la Semana</h2>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+              <img src="https://placehold.co/400x300/FF9F1C/FFFFFF?text=Receta+Destacada" class="card-img-top"
+                alt="Receta 1">
+              <div class="card-body">
+                <h5 class="card-title">Receta más votada</h5>
+                <p class="card-text">Descubre por qué esta receta es la favorita de la comunidad.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+              <img src="https://placehold.co/400x300/2EC4B6/FFFFFF?text=Novedad+del+Mes" class="card-img-top"
+                alt="Receta 2">
+              <div class="card-body">
+                <h5 class="card-title">Novedad del mes</h5>
+                <p class="card-text">La última incorporación a nuestra colección de recetas.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+              <img src="https://placehold.co/400x300/E71D36/FFFFFF?text=Recomendado+Chef" class="card-img-top"
+                alt="Receta 3">
+              <div class="card-body">
+                <h5 class="card-title">Recomendado del Chef</h5>
+                <p class="card-text">Selección especial de nuestros expertos culinarios.</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </footer>
-    <!-- Bootstrap JavaScript Libraries -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
-    <!-- FontAwesome 6.2.0 JavaScript Libraries -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js"></script>
-    <!-- Your custom scripts -->
-    <script src="./js/script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/jwt-decode@3.1.2/build/jwt-decode.min.js"></script>
+    </section>
+
+    <!-- recetas -->
+    <section class="recipes-section py-5">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="row mb-5">
+          <div class="col-12 text-center">
+            <span class="text-primary fw-semibold text-uppercase letter-spacing-2">Explora</span>
+            <h2 class="display-5 fw-bold mt-2 mb-3">Nuestras Recetas</h2>
+            <div class="mx-auto" style="max-width: 600px;">
+              <p class="text-muted lead">Descubre una amplia variedad de recetas para todos los gustos</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Recipe Categories Grid -->
+        <div class="row g-4">
+          <!-- Por País -->
+          <div class="col-md-4">
+            <a href="comidas-por-pais.html" class="text-decoration-none">
+              <div class="card border-0 shadow-sm hover-shadow transition-300 h-100">
+                <img src="img/por-pais.png" class="card-img-top" alt="Recetas por País"
+                  style="height: 200px; object-fit: cover;">
+                <div class="card-body text-center p-4">
+                  <p class="card-text text-muted">Explora la gastronomía de diferentes culturas</p>
+                  <span class="btn btn-outline-primary mt-3">Explorar</span>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Por Categoría -->
+          <div class="col-md-4">
+            <a href="comidas-por-categoria.html" class="text-decoration-none">
+              <div class="card border-0 shadow-sm hover-shadow transition-300 h-100">
+                <img src="img/por-tipo.png" class="card-img-top" alt="Recetas por Categoría"
+                  style="height: 200px; object-fit: cover;">
+                <div class="card-body text-center p-4">
+                  <p class="card-text text-muted">Encuentra recetas según el tipo de plato</p>
+                  <span class="btn btn-outline-primary mt-3">Explorar</span>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Por Ocasión (Nuevo) -->
+          <div class="col-md-4">
+            <a href="comidas-por-ocasion.html" class="text-decoration-none">
+              <div class="card border-0 shadow-sm hover-shadow transition-300 h-100">
+                <img src="img/postres.png" class="card-img-top" alt="Postres" style="height: 200px; object-fit: cover;">
+                <div class="card-body text-center p-4">
+                  <p class="card-text text-muted">Recetas perfectas para cada celebración</p>
+                  <span class="btn btn-outline-primary mt-3">Explorar</span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Divider -->
+        <div class="row my-5">
+          <div class="col">
+            <hr class="border-2 border-primary opacity-25">
+          </div>
+        </div>
+        <!-- Countries Section -->
+        <div class="row mb-5">
+          <div class="col-12 text-center">
+            <span class="text-primary fw-semibold text-uppercase letter-spacing-2">Descubre</span>
+            <h2 class="display-5 fw-bold mt-2 mb-3">Países Destacados</h2>
+            <div class="mx-auto" style="max-width: 600px;">
+              <p class="text-muted lead">Explora las delicias culinarias de diferentes culturas</p>
+            </div>
+          </div>
+        </div>
+        <!-- Countries Grid -->
+        <div class="row g-4" id="pais">
+          <!-- Dynamic content will be loaded here -->
+        </div>
+      </div>
+    </section>
+    <!-- RECETA DEL DÍA -->
+    <section class="recipe-of-day py-5 bg-light">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="row mb-4">
+          <div class="col-12">
+            <span class="text-primary fw-semibold text-uppercase letter-spacing-2">
+              <i class="fas fa-star me-2"></i>Destacado
+            </span>
+            <h2 class="display-5 fw-bold mt-2">Receta del Día</h2>
+          </div>
+        </div>
+
+        <!-- Recipe Content -->
+        <div class="row g-4 align-items-center" id="recetaDelDia">
+          <!-- Recipe Info -->
+          <div class="col-md-6">
+            <div class="pe-md-4">
+              <!-- Title -->
+              <h3 class="fw-bold mb-3" id="recetaDelDiaNombre">
+                <i class="fas fa-utensils text-primary me-2"></i>
+                Receta random
+              </h3>
+
+              <!-- Quick Info -->
+              <div class="d-flex gap-3 mb-4">
+                <span class="badge bg-primary">
+                  <i class="far fa-clock me-1"></i>30 min
+                </span>
+                <span class="badge bg-success">
+                  <i class="fas fa-signal me-1"></i>Fácil
+                </span>
+                <span class="badge bg-info">
+                  <i class="fas fa-users me-1"></i>4 personas
+                </span>
+              </div>
+
+              <!-- Description -->
+              <div class="mb-4" id="recetaDelDiaDescripcion">
+                <p class="lead text-muted">
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                  diam nonummy nibh euismod
+                </p>
+              </div>
+
+              <!-- Action Button -->
+              <a href="#" class="btn btn-primary">
+                <i class="fas fa-book-open me-2"></i>Ver Receta Completa
+              </a>
+            </div>
+          </div>
+
+          <!-- Recipe Image -->
+          <div class="col-md-6">
+            <div class="position-relative">
+              <img src="https://placehold.co/624x352" alt="" id="recetaDelDiaImg" class="img-fluid rounded-3 shadow-lg"
+                style="object-fit: cover; height: 400px; width: 100%;">
+              <div class="position-absolute bottom-0 start-0 w-100 p-4 bg-gradient-dark">
+                <div class="d-flex align-items-center">
+                  <div class="text-white">
+                    <i class="fas fa-fire me-2 text-warning"></i>
+                    <span class="fw-bold">Receta Destacada</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Nueva Sección: Testimonios -->
+    <include src="include/testimonios.html"></include>
+    <!-- Descarga la app -->
+  <include src="include/descarga-app.html"></include>
+  </main>
+  <include src="include/footer.html"></include>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+  <!-- FontAwesome 6.2.0 JavaScript Libraries -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js"></script>
+  <!-- Your custom scripts -->
+  <script src="./js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jwt-decode@3.1.2/build/jwt-decode.min.js"></script>
+  <script src="js/include.js"></script>
 </body>
+
 </html>
