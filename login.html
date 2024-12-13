@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Acceder</title>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <link rel="icon" href="img/user-cheems.png" type="image/x-icon" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="css/style2.css" />
-  <link rel="stylesheet" href="css/typos.css" />
-  <link rel="stylesheet" href="css/responsive.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
-
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Explora recetas auténticas de todo el mundo">
+  <meta name="keywords" content="recetas, cocina internacional, gastronomía mundial">
+  <title>Recetas del Mundo | [Page Name]</title>
+  <!-- Favicon -->
+  <link rel="icon" href="img/user-cheems.png" type="image/x-icon">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style2.css">
+  <link rel="stylesheet" href="css/typos.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 </head>
 
 <body>
@@ -325,21 +327,76 @@
   </div>
   
   <!-- RECETA DEL DIA -->
-  <div class="receta-del-dia my-3">
-    <div class="container py-3">
-      <div class="row align-items-center py-3" id="recetaDelDia">
-        <div class="col-md-6">
-          <p class="display-7 tx-cafe">receta del día</p>
-          <p class="receta-random tx-cafe" id="recetaDelDiaNombre">Receta random</p>
-          <p id="recetaDelDiaDescripcion">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed Lorem ipsum
-            dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</p>
+  <section class="recipe-of-day py-5 bg-light">
+    <div class="container">
+      <!-- Section Header -->
+      <div class="row mb-4">
+        <div class="col-12">
+          <span class="text-primary fw-semibold text-uppercase letter-spacing-2">
+            <i class="fas fa-star me-2"></i>Destacado
+          </span>
+          <h2 class="display-5 fw-bold mt-2">Receta del Día</h2>
         </div>
-        <div class="col-md-6 text-center">
-          <img src="https://placehold.co/624x352" alt="" id="recetaDelDiaImg">
+      </div>
+
+      <!-- Recipe Content -->
+      <div class="row g-4 align-items-center" id="recetaDelDia">
+        <!-- Recipe Info -->
+        <div class="col-md-6">
+          <div class="pe-md-4">
+            <!-- Title -->
+            <h3 class="fw-bold mb-3" id="recetaDelDiaNombre">
+              <i class="fas fa-utensils text-primary me-2"></i>
+              Receta random
+            </h3>
+
+            <!-- Quick Info -->
+            <div class="d-flex gap-3 mb-4">
+              <span class="badge bg-primary">
+                <i class="far fa-clock me-1"></i>30 min
+              </span>
+              <span class="badge bg-success">
+                <i class="fas fa-signal me-1"></i>Fácil
+              </span>
+              <span class="badge bg-info">
+                <i class="fas fa-users me-1"></i>4 personas
+              </span>
+            </div>
+
+            <!-- Description -->
+            <div class="mb-4" id="recetaDelDiaDescripcion">
+              <p class="lead text-muted">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                diam nonummy nibh euismod
+              </p>
+            </div>
+
+            <!-- Action Button -->
+            <a href="#" class="btn btn-primary">
+              <i class="fas fa-book-open me-2"></i>Ver Receta Completa
+            </a>
+          </div>
+        </div>
+
+        <!-- Recipe Image -->
+        <div class="col-md-6">
+          <div class="position-relative">
+            <img src="https://placehold.co/624x352" alt="" id="recetaDelDiaImg" class="img-fluid rounded-3 shadow-lg"
+              style="object-fit: cover; height: 400px; width: 100%;">
+            <div class="position-absolute bottom-0 start-0 w-100 p-4 bg-gradient-dark">
+              <div class="d-flex align-items-center">
+                <div class="text-white">
+                  <i class="fas fa-fire me-2 text-warning"></i>
+                  <span class="fw-bold">Receta Destacada</span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
+  </section>
   <include src="include/footer.html"></include>
   <script src="js/script.js"></script>
   <script src="js/login.js"></script>

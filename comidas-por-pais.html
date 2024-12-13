@@ -1,70 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Comida Por País</title>
-  <link rel="icon" href="img/user-cheems.png" type="image/x-icon" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="css/style.css" rel="stylesheet" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Explora recetas auténticas de todo el mundo">
+  <meta name="keywords" content="recetas, cocina internacional, gastronomía mundial">
+  <title>Recetas del Mundo | [Page Name]</title>
+  <!-- Favicon -->
+  <link rel="icon" href="img/user-cheems.png" type="image/x-icon">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style2.css">
+  <link rel="stylesheet" href="css/typos.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 </head>
 
 <body>
   <!-- Contenido del encabezado -->
-  <header class="bg-naranjo-op z-index-d">
-    <nav class="navbar navbar-expand-lg navbar-light bg-naranjo-op ">
-      <div class="container text-light pt-2">
-        <a class="navbar-brand tx-azul" href="index.html">
-          <div class="titulorecetas">
-            <p class="titulo-receta display-6">Recetas</p>
-            <p class="titulo-mundo">Del mundo</p>
+  <header class="fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background: rgba(247, 84, 66, 0.95);">
+      <div class="container py-2">
+        <!-- Logo Section -->
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+          <img src="img/user-cheems.png" alt="Logo" height="40" class="me-2">
+          <div class="brand-text">
+            <h1 class="h4 mb-0 text-white">Recetas</h1>
+            <p class="small mb-0 text-white-50">Del Mundo</p>
           </div>
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+
+        <!-- Navbar Toggler -->
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown">
           <span class="navbar-toggler-icon"></span>
         </button>
+
+        <!-- Navigation Items -->
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav ms-auto">
+          <ul class="navbar-nav ms-auto align-items-center">
             <li class="nav-item">
-              <a href="index.html" class="nav-link links text-decoration-none text-light">Inicio</a>
+              <a href="index.html" class="nav-link px-3">Inicio</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle links text-decoration-none text-light" href="#"
-                id="navbarDropdownPaises" role="button" data-bs-toggle="dropdown" aria-expanded="false">Países</a>
-              <ul class="dropdown-menu" id="navbarDropdownPaisesMenu" aria-labelledby="navbarDropdownPaises">
-                <!-- Los países se cargarán aquí dinámicamente -->
+              <a class="nav-link dropdown-toggle px-3" href="#" id="navbarDropdownPaises" data-bs-toggle="dropdown">
+                Países
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end animate slideIn" id="navbarDropdownPaisesMenu">
+                <!-- Dynamic content -->
               </ul>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle links text-decoration-none text-light" href="#"
-                id="navbarDropdownCategorias" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">Categorías</a>
-              <ul class="dropdown-menu" id="navbarDropdownCategoriasMenu" aria-labelledby="navbarDropdownCategorias">
-                <!-- Las categorías se cargarán aquí dinámicamente -->
+              <a class="nav-link dropdown-toggle px-3" href="#" id="navbarDropdownCategorias" data-bs-toggle="dropdown">
+                Categorías
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end animate slideIn" id="navbarDropdownCategoriasMenu">
+                <!-- Dynamic content -->
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link links text-decoration-none text-light" href="#" id="recetaRandomLink">Receta
-                aleatoria</a>
+              <a class="nav-link px-3" href="#" id="recetaRandomLink">Receta aleatoria</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link links text-decoration-none text-light" href="login.html" id="loginLink">
-                <i class="fas fa-sign-in-alt"></i>
-                Acceder
+              <a class="nav-link px-3" href="login.html" id="loginLink">
+                <i class="fas fa-sign-in-alt me-1"></i>Acceder
               </a>
             </li>
-            <li class="nav-item btn btn-danger ms-2" id="registerLink">
-              <a class="nav-link text-light text-decoration-none" href="register.html">
-                <i class="fas fa-user-plus"></i>
-                Registrarse</a>
+            <li class="nav-item ms-2">
+              <a class="btn btn-outline-light rounded-pill px-4" href="register.html" id="registerLink">
+                <i class="fas fa-user-plus me-1"></i>Registrarse
+              </a>
             </li>
-            <li class="nav-item d-flex justify-content-center" id="userAvatar">
-              <a class="nav-link p-0 " href="#" id="sidebarToggle">
-                <img class="rounded-circle ms-2 " src="img/user-cheems.png" alt=""
-                  style="height: 50px; width: 50px; object-fit: cover;">
+            <li class="nav-item ms-3" id="userAvatar">
+              <a class="nav-link p-0" href="#" id="sidebarToggle">
+                <img class="rounded-circle border border-2 border-white" src="img/user-cheems.png" alt="Usuario"
+                  style="height: 40px; width: 40px; object-fit: cover;">
               </a>
             </li>
           </ul>
@@ -155,57 +167,54 @@
       </div>
     </div>
   </div>
-  <!-- Contenido del cuerpo -->
-  <div class="hero-categorias bg-crema py-3 pt-3 espaciado-titulo">
+   <!-- Hero Section -->
+   <section class="hero-section py-5 bg-crema">
     <div class="container">
-      <div class="row text-center">
-        <p class="display-2 tx-cafe fw-500" id="nombrePais"></p>
-      </div>
+        <div class="row justify-content-center">
+            <div class="col-md-8 text-center">
+                <span class="text-primary fw-semibold text-uppercase letter-spacing-2">Explora</span>
+                <h1 class="display-4 fw-bold mt-2 mb-3 tx-cafe" id="nombrePais"></h1>
+                <p class="lead text-muted">Descubre los sabores auténticos de la gastronomía local</p>
+            </div>
+        </div>
     </div>
-  </div>
-  <!-- Cards -->
-  <div class="container py-3 my-3">
-    <div class="row" id="recetas">
-      <!-- Aquí se cargarán las recetas -->
-    </div>
-  </div>
-  <div class="container">
-    <div class="row text-center">
-      <hr class="col-md-8 hr align-self-center formulario-img" />
-      <p class="col-4 texto-mediano tx-cafe lato-bold">Países</p>
-    </div>
-  </div>
-  <div class="categorias">
+</section>
+
+<!-- Recipes Grid Section -->
+<section class="recipes-section py-5">
     <div class="container">
-      <div class="row" id="paises">
-        <!-- Aquí se cargarán los países -->
-      </div>
+        <div class="row g-4" id="recetas">
+            <!-- Dynamic recipe cards will be loaded here -->
+        </div>
     </div>
-  </div>
-  <br />
+</section>
+
+<!-- Countries Section -->
+<section class="countries-section py-5 bg-light">
+    <div class="container">
+        <div class="text-center mb-5">
+            <span class="text-primary fw-semibold text-uppercase letter-spacing-2">Descubre</span>
+            <h2 class="display-5 fw-bold mt-2 tx-cafe">Países del Mundo</h2>
+            <div class="mx-auto" style="max-width: 600px;">
+                <p class="text-muted lead">Explora las delicias culinarias de diferentes culturas</p>
+            </div>
+        </div>
+
+        <div class="row g-4" id="paises">
+            <!-- Dynamic country cards will be loaded here -->
+        </div>
+    </div>
+</section>
+
+<include src="include/descarga-app.html"></include>
+
   <!-- Contenido del pie de página -->
-  <footer class="bg-naranjo text-light">
-    <div class="container pt-2 text-center">
-      <div class="row">
-        <div class="col-md-2">
-          <div class="titulorecetas">
-            <p class="titulo-receta display-6">Recetas</p>
-            <p class="titulo-mundo">Del mundo</p>
-          </div>
-        </div>
-        <div class="col-md-10 align-self-center">
-          <p id="anno">
-            {año}, Recetas del mundo - un sitio donde podr ás encontrar la
-            receta perfecta para esa ocasión.
-          </p>
-        </div>
-      </div>
-    </div>
-  </footer>
+  <include src="include/footer.html"></include>
   <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="js/paises.js"></script>
   <script src="js/script.js"></script>
+  <script src="js/include.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/jwt-decode@3.1.2/build/jwt-decode.min.js"></script>
 </body>
 

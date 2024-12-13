@@ -1,70 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Registrarse</title>
-  <link rel="icon" href="img/user-cheems.png" type="image/x-icon" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet" />
-  <link href="css/style.css" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Explora recetas auténticas de todo el mundo">
+  <meta name="keywords" content="recetas, cocina internacional, gastronomía mundial">
+  <title>Recetas del Mundo | [Page Name]</title>
+  <!-- Favicon -->
+  <link rel="icon" href="img/user-cheems.png" type="image/x-icon">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style2.css">
+  <link rel="stylesheet" href="css/typos.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <script src="js/titleManager.js"></script>
 </head>
 
 <body>
-  <header class="bg-naranjo-op z-index-d">
-    <nav class="navbar navbar-expand-lg navbar-light bg-naranjo-op">
-      <div class="container text-light pt-2">
-        <a class="navbar-brand tx-azul" href="index.html">
-          <div class="titulorecetas">
-            <p class="titulo-receta display-6">Recetas</p>
-            <p class="titulo-mundo">Del mundo</p>
+  <header class="fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background: rgba(247, 84, 66, 0.95);">
+      <div class="container py-2">
+        <!-- Logo Section -->
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+          <img src="img/user-cheems.png" alt="Logo" height="40" class="me-2">
+          <div class="brand-text">
+            <h1 class="h4 mb-0 text-white">Recetas</h1>
+            <p class="small mb-0 text-white-50">Del Mundo</p>
           </div>
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+
+        <!-- Navbar Toggler -->
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown">
           <span class="navbar-toggler-icon"></span>
         </button>
+
+        <!-- Navigation Items -->
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav ms-auto">
+          <ul class="navbar-nav ms-auto align-items-center">
             <li class="nav-item">
-              <a href="index.html" class="nav-link links text-decoration-none text-light">Inicio</a>
+              <a href="index.html" class="nav-link px-3">Inicio</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle links text-decoration-none text-light" href="#"
-                id="navbarDropdownPaises" role="button" data-bs-toggle="dropdown" aria-expanded="false">Países</a>
-              <ul class="dropdown-menu" id="navbarDropdownPaisesMenu" aria-labelledby="navbarDropdownPaises">
-                <!-- Los países se cargarán aquí dinámicamente -->
+              <a class="nav-link dropdown-toggle px-3" href="#" id="navbarDropdownPaises" data-bs-toggle="dropdown">
+                Países
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end animate slideIn" id="navbarDropdownPaisesMenu">
+                <!-- Dynamic content -->
               </ul>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle links text-decoration-none text-light" href="#"
-                id="navbarDropdownCategorias" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">Categorías</a>
-              <ul class="dropdown-menu" id="navbarDropdownCategoriasMenu" aria-labelledby="navbarDropdownCategorias">
-                <!-- Las categorías se cargarán aquí dinámicamente -->
+              <a class="nav-link dropdown-toggle px-3" href="#" id="navbarDropdownCategorias" data-bs-toggle="dropdown">
+                Categorías
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end animate slideIn" id="navbarDropdownCategoriasMenu">
+                <!-- Dynamic content -->
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link links text-decoration-none text-light" href="#" id="recetaRandomLink">Receta
-                aleatoria</a>
+              <a class="nav-link px-3" href="#" id="recetaRandomLink">Receta aleatoria</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link links text-decoration-none text-light" href="login.html" id="loginLink">
-                <i class="fas fa-sign-in-alt"></i>
-                Acceder
+              <a class="nav-link px-3" href="login.html" id="loginLink">
+                <i class="fas fa-sign-in-alt me-1"></i>Acceder
               </a>
             </li>
-            <li class="nav-item btn btn-danger ms-2" id="registerLink">
-              <a class="nav-link text-light text-decoration-none" href="register.html">
-                <i class="fas fa-user-plus"></i>
-                Registrarse</a>
+            <li class="nav-item ms-2">
+              <a class="btn btn-outline-light rounded-pill px-4" href="register.html" id="registerLink">
+                <i class="fas fa-user-plus me-1"></i>Registrarse
+              </a>
             </li>
-            <li class="nav-item d-flex justify-content-center" id="userAvatar">
+            <li class="nav-item ms-3" id="userAvatar">
               <a class="nav-link p-0" href="#" id="sidebarToggle">
-                <img class="rounded-circle ms-2" src="img/user-cheems.png" alt=""
-                  style="height: 50px; width: 50px; object-fit: cover" />
+                <img class="rounded-circle border border-2 border-white" src="img/user-cheems.png" alt="Usuario"
+                  style="height: 40px; width: 40px; object-fit: cover;">
               </a>
             </li>
           </ul>
@@ -93,109 +105,202 @@
       </div>
     </div>
   </div>
-  <div class="text-center bg-crema texto-mediano">
-    <br />
-    <div class="tx-cafe texto-grande">Crear cuenta</div>
-    <br />
-  </div>
-  <div class="container-fluid">
-    <div class="row">
-      <img src="img/banner-2.jpg" class="col-6 formulario-img" />
-      <div class="col-md-6 text-center">
-        <br />
-        <span class="texto-grande">Bienvenid@</span>
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <div class="col-md-6 container-fluid">
-          <div class="input-group input-group-lg rounded-0">
-            <span class="input-group-text rounded-0 bg-naranjo" id="Nombre"><i class="fas fa-user"></i></span>
-            <input type="text" class="form-control bg-crema tx-gris rounded-0" id="firstName" placeholder="Nombre"
-              aria-label="firstName" aria-describedby="Nombre" />
-          </div>
-          <br />
-          <div class="input-group input-group-lg rounded-0">
-            <span class="input-group-text rounded-0 bg-naranjo" id="Apellido"><i class="fas fa-user"></i></span>
-            <input type="text" class="form-control bg-crema tx-gris rounded-0" id="lastName" placeholder="Apellido"
-              aria-label="lastName" aria-describedby="Apellido" />
-          </div>
-          <br />
-          <div class="input-group input-group-lg rounded-0">
-            <span class="input-group-text rounded-0 bg-naranjo" id="Correo"><i class="fas fa-envelope"></i></span>
-            <input type="text" class="form-control bg-crema tx-gris rounded-0" id="username" placeholder="Correo"
-              aria-label="Username" aria-describedby="Correo" />
-          </div>
-          <br />
-          <div class="input-group input-group-lg rounded-0">
-            <span class="input-group-text rounded-0 bg-naranjo" id="Contraseña"><i class="fas fa-lock"></i></span>
-            <input type="password" class="form-control bg-crema tx-gris rounded-0" id="password"
-              placeholder="Contraseña" aria-label="Password" aria-describedby="Contraseña" />
-          </div>
-          <br />
-          <div class="input-group input-group-lg rounded-0">
-            <span class="input-group-text rounded-0 bg-naranjo" id="ConfirmarContraseña"><i
-                class="fas fa-lock"></i></span>
-            <input type="password" class="form-control bg-crema tx-gris rounded-0" id="confirmPassword"
-              placeholder="Confirmar contraseña" aria-label="ConfirmPassword" aria-describedby="ConfirmarContraseña" />
+
+
+  <section class="registration-hero py-5 bg-light">
+    <div class="container text-center">
+      <span class="text-primary fw-semibold text-uppercase letter-spacing-2">Únete a nuestra comunidad</span>
+      <h2 class="display-5 fw-bold mt-2">Descubre el mundo de la cocina</h2>
+    </div>
+  </section>
+  
+  <section class="registration-form">
+    <div class="container-fluid p-0">
+      <div class="row g-0">
+        <!-- Image Side -->
+        <div class="col-lg-6 position-relative">
+          <img src="img/banner-2.jpg" class="w-100 h-100" style="object-fit: cover;" alt="Cooking">
+          <div class="position-absolute bottom-0 start-0 w-100 p-4 bg-gradient-dark">
+            <div class="container">
+              <div class="text-white">
+                <h3 class="h4 mb-2">Comparte tus recetas con el mundo</h3>
+                <p class="mb-0 opacity-75">Únete a miles de chefs apasionados</p>
+              </div>
+            </div>
           </div>
         </div>
-        <span class="visually-hidden" id="errorAcceso" style="color: red">
-          Error:
-        </span>
-        <br />
-        <br />
-        <button class="btn bg-naranjo tx-blanco" id="registerBtn">
-          Registrarse
-        </button>
-        <br />
+  
+        <!-- Form Side -->
+        <div class="col-lg-6 d-flex align-items-center bg-white">
+          <div class="w-100 p-3 p-md-5">
+            <div class="max-width-400 mx-auto">
+              <!-- Form Header -->
+              <div class="text-center mb-4">
+                <h3 class="fw-bold">Crear cuenta</h3>
+                <p class="text-muted">Completa tus datos para comenzar</p>
+              </div>
+  
+              <!-- Form Fields -->
+              <div class="form-stack">
+                <!-- Nombre -->
+                <div class="input-group input-group-lg mb-3">
+                  <span class="input-group-text border-0 bg-naranjo" id="Nombre">
+                    <i class="fas fa-user"></i>
+                  </span>
+                  <input type="text" 
+                         class="form-control bg-crema tx-gris" 
+                         id="firstName" 
+                         placeholder="Nombre"
+                         aria-label="firstName">
+                </div>
+  
+                <!-- Apellido -->
+                <div class="input-group input-group-lg mb-3">
+                  <span class="input-group-text border-0 bg-naranjo" id="Apellido">
+                    <i class="fas fa-user"></i>
+                  </span>
+                  <input type="text" 
+                         class="form-control bg-crema tx-gris" 
+                         id="lastName" 
+                         placeholder="Apellido"
+                         aria-label="lastName">
+                </div>
+  
+                <!-- Email -->
+                <div class="input-group input-group-lg mb-3">
+                  <span class="input-group-text border-0 bg-naranjo" id="Correo">
+                    <i class="fas fa-envelope"></i>
+                  </span>
+                  <input type="email" 
+                         class="form-control bg-crema tx-gris" 
+                         id="username" 
+                         placeholder="Correo electrónico"
+                         aria-label="Username">
+                </div>
+  
+                <!-- Password -->
+                <div class="input-group input-group-lg mb-3">
+                  <span class="input-group-text border-0 bg-naranjo" id="Contraseña">
+                    <i class="fas fa-lock"></i>
+                  </span>
+                  <input type="password" 
+                         class="form-control bg-crema tx-gris" 
+                         id="password" 
+                         placeholder="Contraseña"
+                         aria-label="Password">
+                </div>
+  
+                <!-- Confirm Password -->
+                <div class="input-group input-group-lg mb-4">
+                  <span class="input-group-text border-0 bg-naranjo" id="ConfirmarContraseña">
+                    <i class="fas fa-lock"></i>
+                  </span>
+                  <input type="password" 
+                         class="form-control bg-crema tx-gris" 
+                         id="confirmPassword" 
+                         placeholder="Confirmar contraseña"
+                         aria-label="ConfirmPassword">
+                </div>
+  
+                <!-- Error Message -->
+                <span class="visually-hidden" id="errorAcceso" style="color: red">Error:</span>
+  
+                <!-- Submit Button -->
+                <button class="btn bg-naranjo tx-blanco w-100 py-3" id="registerBtn">
+                  <i class="fas fa-user-plus me-2"></i>Crear cuenta
+                </button>
+  
+                <!-- Login Link -->
+                <div class="text-center mt-4">
+                  <span class="text-muted">¿Ya tienes una cuenta?</span>
+                  <a href="login.html" class="text-decoration-none ms-1">Inicia sesión</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
+  </section>
+  
+  
+  
   <!-- RECETA DEL DIA -->
-  <div class="receta-del-dia my-3">
-    <div class="container py-3">
-      <div class="row align-items-center py-3" id="recetaDelDia">
-        <div class="col-md-6">
-          <p class="display-7 tx-cafe">receta del día</p>
-          <p class="receta-random tx-cafe" id="recetaDelDiaNombre">
-            Receta random
-          </p>
-          <p id="recetaDelDiaDescripcion">
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-            nonummy nibh euismod
-          </p>
-        </div>
-        <div class="col-md-6 text-center">
-          <img src="https://placehold.co/624x352" alt="" id="recetaDelDiaImg" />
+  <section class="recipe-of-day py-5 bg-light">
+    <div class="container">
+      <!-- Section Header -->
+      <div class="row mb-4">
+        <div class="col-12">
+          <span class="text-primary fw-semibold text-uppercase letter-spacing-2">
+            <i class="fas fa-star me-2"></i>Destacado
+          </span>
+          <h2 class="display-5 fw-bold mt-2">Receta del Día</h2>
         </div>
       </div>
-    </div>
-  </div>
-  <footer class="bg-naranjo text-light">
-    <!-- place footer here -->
-    <div class="container pt-2 text-center">
-      <div class="row">
-        <div class="col-md-2">
-          <div class="titulorecetas">
-            <p class="titulo-receta display-6">Recetas</p>
-            <p class="titulo-mundo">Del mundo</p>
+
+      <!-- Recipe Content -->
+      <div class="row g-4 align-items-center" id="recetaDelDia">
+        <!-- Recipe Info -->
+        <div class="col-md-6">
+          <div class="pe-md-4">
+            <!-- Title -->
+            <h3 class="fw-bold mb-3" id="recetaDelDiaNombre">
+              <i class="fas fa-utensils text-primary me-2"></i>
+              Receta random
+            </h3>
+
+            <!-- Quick Info -->
+            <div class="d-flex gap-3 mb-4">
+              <span class="badge bg-primary">
+                <i class="far fa-clock me-1"></i>30 min
+              </span>
+              <span class="badge bg-success">
+                <i class="fas fa-signal me-1"></i>Fácil
+              </span>
+              <span class="badge bg-info">
+                <i class="fas fa-users me-1"></i>4 personas
+              </span>
+            </div>
+
+            <!-- Description -->
+            <div class="mb-4" id="recetaDelDiaDescripcion">
+              <p class="lead text-muted">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                diam nonummy nibh euismod
+              </p>
+            </div>
+
+            <!-- Action Button -->
+            <a href="#" class="btn btn-primary">
+              <i class="fas fa-book-open me-2"></i>Ver Receta Completa
+            </a>
           </div>
         </div>
-        <div class="col-md-10 align-self-center">
-          <p id="anno">
-            {año}, Recetas del mundo - un sitio donde podrás encontrar la
-            receta perfecta para esa ocasión.
-          </p>
+
+        <!-- Recipe Image -->
+        <div class="col-md-6">
+          <div class="position-relative">
+            <img src="https://placehold.co/624x352" alt="" id="recetaDelDiaImg" class="img-fluid rounded-3 shadow-lg"
+              style="object-fit: cover; height: 400px; width: 100%;">
+            <div class="position-absolute bottom-0 start-0 w-100 p-4 bg-gradient-dark">
+              <div class="d-flex align-items-center">
+                <div class="text-white">
+                  <i class="fas fa-fire me-2 text-warning"></i>
+                  <span class="fw-bold">Receta Destacada</span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </footer>
+  </section>
+  <include src="include/footer.html"></include>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="js/script.js"></script>
   <script src="js/login.js"></script>
+  <script src="js/include.js"></script>
 </body>
 
 </html>
