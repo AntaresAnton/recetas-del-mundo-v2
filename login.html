@@ -1,114 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Acceder</title>
-    <link rel="icon" href="img/user-cheems.png" type="image/x-icon">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Acceder</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="icon" href="img/user-cheems.png" type="image/x-icon" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style2.css" />
+  <link rel="stylesheet" href="css/typos.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+
 </head>
+
 <body>
-    <!-- Contenido específico para escritorio -->
-    <header class="bg-naranjo-op z-index-d">
-      <nav class="navbar navbar-expand-lg navbar-light bg-naranjo-op ">
-        <div class="container text-light pt-2">
-          <a class="navbar-brand tx-azul" href="index.html">
-            <div class="titulorecetas">
-              <p class="titulo-receta display-6">Recetas</p>
-              <p class="titulo-mundo">Del mundo</p>
+  <header class="fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background: rgba(247, 84, 66, 0.95);">
+      <div class="container py-2">
+        <!-- Logo Section -->
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+          <img src="img/user-cheems.png" alt="Logo" height="40" class="me-2">
+          <div class="brand-text">
+            <h1 class="h4 mb-0 text-white">Recetas</h1>
+            <p class="small mb-0 text-white-50">Del Mundo</p>
           </div>
         </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
+
+        <!-- Navbar Toggler -->
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown">
+          <span class="navbar-toggler-icon"></span>
         </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a
-                  href="index.html"
-                  class="nav-link links text-decoration-none text-light"
-                  >Inicio</a
-                >
+
+        <!-- Navigation Items -->
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto align-items-center">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link px-3">Inicio</a>
             </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle links text-decoration-none text-light"
-                  href="#"
-                  id="navbarDropdownPaises"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                  >Países</a
-                >
-                <ul
-                  class="dropdown-menu"
-                  id="navbarDropdownPaisesMenu"
-                  aria-labelledby="navbarDropdownPaises"
-                >
-                  <!-- Los países se cargarán aquí dinámicamente -->
-                </ul>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle px-3" href="#" id="navbarDropdownPaises" data-bs-toggle="dropdown">
+                Países
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end animate slideIn" id="navbarDropdownPaisesMenu">
+                <!-- Dynamic content -->
+              </ul>
             </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle links text-decoration-none text-light"
-                  href="#"
-                  id="navbarDropdownCategorias"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                  >Categorías</a
-                >
-                <ul
-                  class="dropdown-menu"
-                  id="navbarDropdownCategoriasMenu"
-                  aria-labelledby="navbarDropdownCategorias"
-                >
-                  <!-- Las categorías se cargarán aquí dinámicamente -->
-                </ul>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle px-3" href="#" id="navbarDropdownCategorias" data-bs-toggle="dropdown">
+                Categorías
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end animate slideIn" id="navbarDropdownCategoriasMenu">
+                <!-- Dynamic content -->
+              </ul>
             </li>
-              <li class="nav-item">
-                <a
-                  class="nav-link links text-decoration-none text-light"
-                  href="#"
-                  id="recetaRandomLink"
-                  >Receta aleatoria</a
-                >
+            <li class="nav-item">
+              <a class="nav-link px-3" href="#" id="recetaRandomLink">Receta aleatoria</a>
             </li>
-              <li class="nav-item">
-                <a
-                  class="nav-link links text-decoration-none text-light"
-                  href="login.html"
-                  id="loginLink"
-                  >
-                  <i class="fas fa-sign-in-alt"></i>
-                  Acceder
-                </a>
+            <li class="nav-item">
+              <a class="nav-link px-3" href="login.html" id="loginLink">
+                <i class="fas fa-sign-in-alt me-1"></i>Acceder
+              </a>
             </li>
-              <li class="nav-item btn btn-danger ms-2" id="registerLink">
-                <a
-                  class="nav-link text-light text-decoration-none"
-                  href="register.html"
-                  
-                  >
-                  <i class="fas fa-user-plus"></i>
-                  Registrarse</a
-                >
+            <li class="nav-item ms-2">
+              <a class="btn btn-outline-light rounded-pill px-4" href="register.html" id="registerLink">
+                <i class="fas fa-user-plus me-1"></i>Registrarse
+              </a>
             </li>
-              <li class="nav-item d-flex justify-content-center" id="userAvatar">
-                <a class="nav-link p-0 " href="#" id="sidebarToggle">
-                  <img class="rounded-circle ms-2 " src="img/user-cheems.png" alt="" style="height: 50px; width: 50px; object-fit: cover;">
+            <li class="nav-item ms-3" id="userAvatar">
+              <a class="nav-link p-0" href="#" id="sidebarToggle">
+                <img class="rounded-circle border border-2 border-white" src="img/user-cheems.png" alt="Usuario"
+                  style="height: 40px; width: 40px; object-fit: cover;">
               </a>
             </li>
           </ul>
@@ -116,95 +81,269 @@
       </div>
     </nav>
   </header>
-  <div class="modal fade modal-lg" id="recetaAleatoriaModal" tabindex="-1" aria-labelledby="recetaAleatoriaModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="recetaAleatoriaModalLabel">Receta Aleatoria</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-            <div class="modal-body" id="recetaAleatoriaModalBody">
-                <!-- Contenido de la receta aleatoria se cargará aquí -->
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Cerrar</button>
-          </div>
+
+  <!-- Improved Sidebar -->
+  <div id="sidebar" class="sidebar shadow-lg">
+    <div class="sidebar-header bg-gradient" style="background: linear-gradient(45deg, #F75442, #FF8C42);">
+      <h3 class="mb-0"><i class="fas fa-user-circle me-2"></i>Mi Perfil</h3>
+      <button class="btn-close btn-close-white" id="closeSidebar"></button>
+    </div>
+
+    <div class="sidebar-content p-4">
+      <div class="text-center mb-4">
+        <img class="rounded-circle border border-3 border-white shadow" src="img/user-cheems.png" alt="Profile"
+          style="width: 120px; height: 120px; object-fit: cover;">
+        <h4 class="mt-3 mb-1">Chef Explorador</h4>
+        <span class="badge bg-success rounded-pill px-3">Activo</span>
       </div>
+
+      <div class="card border-0 shadow-sm">
+        <div class="card-header bg-light border-0">
+          <h5 class="card-title mb-0"><i class="fas fa-info-circle me-2"></i>Información Personal</h5>
+        </div>
+        <div class="card-body">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item px-0">
+              <div class="d-flex justify-content-between align-items-center">
+                <div><i class="fas fa-user me-2 text-primary"></i>Nombre</div>
+                <span id="userName" class="text-muted"></span>
+              </div>
+            </li>
+            <li class="list-group-item px-0">
+              <div class="d-flex justify-content-between align-items-center">
+                <div><i class="fas fa-user me-2 text-primary"></i>Apellido</div>
+                <span id="userLastName" class="text-muted"></span>
+              </div>
+            </li>
+            <li class="list-group-item px-0">
+              <div class="d-flex justify-content-between align-items-center">
+                <div><i class="fas fa-envelope me-2 text-primary"></i>Correo</div>
+                <span id="userEmail" class="text-muted"></span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <a href="#" id="logoutLink" class="btn btn-danger w-100 mt-4">
+        <i class="fas fa-sign-out-alt me-2"></i>Cerrar Sesión
+      </a>
+    </div>
   </div>
-</div>
-      <div class="text-center bg-crema texto-mediano">
-        <br>
-        <div class="tx-cafe texto-grande">
-          Acceder
+  <!-- Modal -->
+  <div class="modal fade" id="recetaAleatoriaModal" tabindex="-1" aria-labelledby="recetaAleatoriaModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content">
+        <!-- Header -->
+        <div class="modal-header bg-light border-0">
+          <div class="modal-title">
+            <h4 class="mb-0 fw-bold" id="recetaAleatoriaModalLabel">
+              <i class="fas fa-random me-2 text-primary"></i>Receta Aleatoria
+            </h4>
+            <p class="text-muted small mb-0">Descubre nuevas recetas cada día</p>
+          </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <br>
-    </div>
-      <div class="container-fluid">
-        <div class="row">
-          <img src="img/banner-2.jpg" class="col-6 formulario-img">
-          <div class="col-md-6 text-center">
-            <br>
-            <span class="texto-grande">Bienvenid@</span>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <div class="col-md-6  container-fluid">
-              <div class="input-group input-group-lg rounded-0">
-            <span class="input-group-text rounded-0 bg-naranjo" id="Usuario"><i class="fas fa-user"></i></span>
-            <input type="text" class="form-control bg-crema tx-gris rounded-0" id="username" placeholder="Usuario" aria-label="Username" aria-describedby="Usuario">
+
+        <!-- Body -->
+        <div class="modal-body p-4" id="recetaAleatoriaModalBody">
+          <div class="row g-4">
+            <!-- Imagen y Detalles -->
+            <div class="col-md-6">
+              <!-- Imagen con overlay -->
+              <div class="position-relative mb-4">
+                <img src="placeholder.jpg" class="img-fluid rounded-3 shadow-sm w-100" alt="Receta" id="recetaImg"
+                  style="max-height: 350px; object-fit: cover;">
+                <div class="position-absolute bottom-0 start-0 p-3 w-100 bg-gradient-dark">
+                  <div class="d-flex gap-2">
+                    <span class="badge bg-primary">
+                      <i class="fas fa-clock me-1"></i>30 min
+                    </span>
+                    <span class="badge bg-success">
+                      <i class="fas fa-signal me-1"></i>Fácil
+                    </span>
+                    <span class="badge bg-info">
+                      <i class="fas fa-users me-1"></i>4 personas
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Información General -->
+              <div class="card bg-light border-0">
+                <div class="card-body">
+                  <h6 class="fw-bold mb-3">
+                    <i class="fas fa-info-circle me-2 text-primary"></i>Información General
+                  </h6>
+                  <div class="row g-3">
+                    <div class="col-6">
+                      <small class="text-muted d-block">Tiempo de preparación</small>
+                      <span class="fw-medium">30 minutos</span>
+                    </div>
+                    <div class="col-6">
+                      <small class="text-muted d-block">Porciones</small>
+                      <span class="fw-medium">4 personas</span>
+                    </div>
+                    <div class="col-6">
+                      <small class="text-muted d-block">Dificultad</small>
+                      <span class="fw-medium">Fácil</span>
+                    </div>
+                    <div class="col-6">
+                      <small class="text-muted d-block">Categoría</small>
+                      <span class="fw-medium" id="recetaCategoria">Principal</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-              <br>
-              <div class="input-group input-group-lg rounded-0">
-            <span class="input-group-text rounded-0 bg-naranjo" id="Contraseña"><i class="fas fa-lock"></i></span>
-            <input type="password" class="form-control bg-crema tx-gris rounded-0" id="password" placeholder="Contraseña" aria-label="Password" aria-describedby="Contraseña">
+
+            <!-- Contenido -->
+            <div class="col-md-6">
+              <div class="h-100 d-flex flex-column">
+                <h5 class="fw-bold mb-4" id="recetaTitulo">Nombre de la Receta</h5>
+
+                <!-- Descripción -->
+                <div class="mb-4">
+                  <p class="text-muted" id="recetaDescripcion">
+                    Descripción de la receta...
+                  </p>
+                </div>
+
+                <!-- Ingredientes -->
+                <div class="mb-4">
+                  <h6 class="fw-bold mb-3">
+                    <i class="fas fa-list-ul me-2 text-primary"></i>Ingredientes
+                  </h6>
+                  <ul class="list-group list-group-flush border-top border-bottom" id="ingredientesList">
+                    <!-- Ingredientes dinámicos -->
+                  </ul>
+                </div>
+
+                <!-- Instrucciones -->
+                <div class="flex-grow-1">
+                  <h6 class="fw-bold mb-3">
+                    <i class="fas fa-tasks me-2 text-primary"></i>Preparación
+                  </h6>
+                  <div id="instruccionesList" class="overflow-auto" style="max-height: 250px;">
+                    <!-- Instrucciones dinámicas -->
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-            <div class="form-text" id="basic-addon4">
-              No tienes cuenta? 
-              <a href="register.html" class="tx-nolinea tx-gris">Registrate.</a>
-          </div>
-            <span class="visually-hidden" id="errorAcceso" style="color: red"> Error: </span>
-            <br>
-            <br>
-            <button class="btn bg-naranjo tx-blanco" id="loginBtn">Ingresar</button>
+        </div>
+
+        <!-- Footer -->
+        <div class="modal-footer border-0">
+          <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">
+            <i class="fas fa-times me-2"></i>Cerrar
+          </button>
+          <button type="button" class="btn btn-primary">
+            <i class="fas fa-heart me-2"></i>Guardar Receta
+          </button>
         </div>
       </div>
     </div>
-       <!-- RECETA DEL DIA -->
-    <div class="receta-del-dia my-3">
-      <div class="container py-3">
-          <div class="row align-items-center py-3" id="recetaDelDia">
-              <div class="col-md-6">
-                  <p class="display-7 tx-cafe">receta del día</p>
-                  <p class="receta-random tx-cafe" id="recetaDelDiaNombre">Receta random</p>
-                  <p id="recetaDelDiaDescripcion">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</p>
-            </div>
-              <div class="col-md-6 text-center">
-                  <img src="https://placehold.co/624x352" alt="" id="recetaDelDiaImg">
-            </div>
+  </div>
+
+  <section class="py-5 bg-light">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-8 text-center">
+          <span class="text-primary fw-semibold text-uppercase letter-spacing-2">Bienvenido</span>
+          <h2 class="display-5 fw-bold mt-2 mb-3">Acceder</h2>
+          <div class="mx-auto" style="max-width: 600px;">
+            <p class="text-muted lead">Ingresa a tu cuenta para descubrir un mundo de sabores</p>
+          </div>
         </div>
+      </div>
     </div>
-</div>
-    <footer class="bg-naranjo text-light">
-      <!-- place footer here -->
-      <div class="container pt-2 text-center ">
-          <div class="row">
-              <div class="col-md-2">
-                  <div class="titulorecetas">
-                      <p class="titulo-receta display-6">Recetas</p>
-                      <p class="titulo-mundo">Del mundo</p>
-                </div>
+  </section>
+  
+  <div class="container-fluid p-0">
+    <div class="row g-0">
+      <!-- Image Section -->
+      <div class="col-md-6">
+        <img src="img/banner-2.jpg" class="img-fluid h-100 w-100" style="object-fit: cover;" alt="Banner">
+      </div>
+  
+      <!-- Login Form Section -->
+      <div class="col-md-6 d-flex align-items-center">
+        <div class="w-100 px-4 px-md-5 py-5">
+          <!-- Header -->
+          <div class="text-center mb-5">
+            <span class="text-primary fw-semibold text-uppercase letter-spacing-2">Bienvenid@</span>
+            <h2 class="display-5 fw-bold mt-2">Iniciar Sesión</h2>
+          </div>
+  
+          <!-- Form -->
+          <div class="max-width-400 mx-auto">
+            <!-- Username Input -->
+            <div class="input-group input-group-lg mb-4">
+              <span class="input-group-text bg-primary text-white border-0">
+                <i class="fas fa-user"></i>
+              </span>
+              <input type="text" 
+                     class="form-control border-0 shadow-none" 
+                     id="username" 
+                     placeholder="Usuario"
+                     aria-label="Username">
             </div>
-              <div class="col-md-10 align-self-center">
-                  <p id="anno">{año}, Recetas del mundo - un sitio donde podr ás encontrar la receta perfecta para esa ocasión.
-                  </p>
+  
+            <!-- Password Input -->
+            <div class="input-group input-group-lg mb-4">
+              <span class="input-group-text bg-primary text-white border-0">
+                <i class="fas fa-lock"></i>
+              </span>
+              <input type="password" 
+                     class="form-control border-0 shadow-none" 
+                     id="password" 
+                     placeholder="Contraseña"
+                     aria-label="Password">
             </div>
+  
+            <!-- Register Link -->
+            <div class="text-center mb-4">
+              <span class="text-muted">¿No tienes cuenta? </span>
+              <a href="register.html" class="text-primary text-decoration-none fw-semibold">Regístrate aquí</a>
+            </div>
+  
+            <!-- Error Message -->
+            <div class="visually-hidden text-danger mb-3" id="errorAcceso">
+              Error:
+            </div>
+  
+            <!-- Submit Button -->
+            <button class="btn btn-primary w-100 py-3" id="loginBtn">
+              <i class="fas fa-sign-in-alt me-2"></i>Ingresar
+            </button>
+          </div>
         </div>
+      </div>
     </div>
-</footer>
+  </div>
+  
+  <!-- RECETA DEL DIA -->
+  <div class="receta-del-dia my-3">
+    <div class="container py-3">
+      <div class="row align-items-center py-3" id="recetaDelDia">
+        <div class="col-md-6">
+          <p class="display-7 tx-cafe">receta del día</p>
+          <p class="receta-random tx-cafe" id="recetaDelDiaNombre">Receta random</p>
+          <p id="recetaDelDiaDescripcion">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed Lorem ipsum
+            dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</p>
+        </div>
+        <div class="col-md-6 text-center">
+          <img src="https://placehold.co/624x352" alt="" id="recetaDelDiaImg">
+        </div>
+      </div>
+    </div>
+  </div>
+  <include src="include/footer.html"></include>
   <script src="js/script.js"></script>
   <script src="js/login.js"></script>
+  <script src="js/include.js"></script>
 </body>
+
 </html>
